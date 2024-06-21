@@ -1,0 +1,15 @@
+services:
+  mariadb:
+    image: 'mariadb:latest'
+    environment:
+      - 'MARIADB_DATABASE=climby_db'
+      - 'MARIADB_PASSWORD=changeMe'
+      - 'MARIADB_ROOT_PASSWORD=changeMe'
+      - 'MARIADB_USER=dev'
+    ports:
+      - '3306:3306'
+    volumes:
+      - db:/var/lib/mysql/
+
+volumes:
+  db:

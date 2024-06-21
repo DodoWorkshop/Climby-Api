@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Climby API
+
+
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
