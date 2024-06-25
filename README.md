@@ -1,1 +1,1 @@
-# Climby-Api
+# Climby Api
