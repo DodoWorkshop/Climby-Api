@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM eclipse-temurin:17
 
 # [Labels]
 LABEL maintainer="Donovan Persent"
