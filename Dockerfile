@@ -1,4 +1,9 @@
-FROM openjdk:17
+# Étape de build pour amd64/arm64
+FROM --platform=linux/amd64 openjdk:17 AS amd64
+FROM --platform=linux/arm64 openjdk:17 AS arm64
+
+# Étape de build pour armv7 (32 bits)
+FROM --platform=linux/arm/v7 arm32v7/eclipse-temurin:17 AS armv7
 
 # [Labels]
 LABEL maintainer="Donovan Persent"
